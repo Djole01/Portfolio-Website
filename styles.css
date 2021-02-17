@@ -32,7 +32,6 @@ nav ul li a{
 }
 
 
-
   
   
 
@@ -58,18 +57,6 @@ img{
   border-radius: 10px;
 }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   /**********************************
   This section is for styling tables
   ***********************************/
@@ -80,14 +67,17 @@ img{
 
   td {
     vertical-align: top;
-    padding: 70px;
+    padding: 30px;
     text-align: center;
     border-radius: 25px;
     margin: auto;
     border: 1px solid #182EBF;
+    background-color: #1F2231;
+    color: white;
+
+  }
+  td:hover{
+    background-color: #0F2DF7;
   }
 
-  td {
-    color: white;
-  }
   /********************************/

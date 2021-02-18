@@ -5,7 +5,7 @@ body {
     text-align: center;
   }
   
-  
+
 
 nav ul {
   background-color: #182EBF;
@@ -14,28 +14,40 @@ nav ul {
   border-width: 2px;
   padding: 10px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 42.5%;
+  margin: 0 auto;
 }
+
 nav ul li{
   list-style-type: none;
   display: inline;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
   color:white;
+  text-align: center;
 }
+
 nav ul li a{
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
+/* responsive menu navigation */
+@media all and (min-width: 1000px) {
+  nav ul {
+      flex-direction: row;
+      justify-content:center;
+  }
+}
 
 
 
   
   
 
-
-
-  
+/* the two links on the bottom for github and linkedin, two divs inside a div */
   #links{
 margin: 0 auto;
 width: 100px;

@@ -33,6 +33,11 @@ nav ul li a{
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+nav ul li a:hover{
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
 
 /* responsive menu navigation */
 @media all and (min-width: 1000px) {
@@ -84,7 +89,7 @@ img{
     border: 1px solid #182EBF;
     background-color: #1F2231;
     color: white;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 
   }
   td:hover{

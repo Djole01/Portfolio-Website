@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Blank Page</title>
-		<link type="text/css" rel="stylesheet" href="styles.css"/>
+		<title>Pi Cam Projects</title>
+		<link type="text/css" rel="stylesheet" href="stylesCam.css"/>
 		<meta charset="utf-8"/>
 	</head>
 	<body>
@@ -21,8 +21,24 @@
 	    
 	    
 
+		<h1>Sunset and Sunrise Timelapse</h1>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/j2eXZRRNHDY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Raspberry pi, timelapse script:<br><br>
+		bash script to take picture, camerha.sh<br>
+		<div id="code">#!/bin/bash<br>
+		DATE=$(date +"%Y-%m-%d_%H%M")<br>
+		raspistill -o /home/pi/Desktop/timelapse/$DATE.jpg</div>
 
-        test1
+		Cron script to automate taking pictures<br>
+		run command<br> 
+		<div id="code">crontab -e</div>
+		add to the bottom:<br>
+		<div id="code">*/5 * * * * sh /home/pi/Desktop/timelapse/camera.sh</div>
+
+		to copy file through putty SSH (to check how the image looks): <br>
+		<div id="code">scp -P 22 pi@192.168.100.30:/home/pi/Desktop/timelapse/2021-03-02_1437.jpg a.jpg</div><br>
+		Extract images, compile with a video editor and upload.<br>
+
 
 
 	    

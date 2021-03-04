@@ -6,12 +6,17 @@ body {
     margin: auto;
   }
  
-
+iframe{
+  
+  display: block;
+  margin: 0 auto;
+}
 
   main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
+    background-color: #1F2231;
 }
 
 

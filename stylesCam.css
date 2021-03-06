@@ -11,13 +11,16 @@ iframe{
   display: block;
   margin: 0 auto;
 }
-
+img{
+  
+  display: block;
+  margin: 0 auto;
+}
   main {
     padding: 20px;
-    max-width: 800px;
+    max-width: 1800px;
     margin: auto;
-    background-color: #1F2231;
-}
+  }
 
 
   nav ul {
@@ -75,4 +78,30 @@ iframe{
     padding: 1em 1.5em;
     display: block;
     word-wrap: break-word;
+}
+
+#columns {
+
+  margin: 0 auto;
+  width: auto;
+  overflow: hidden;
+}
+
+#column1 {
+  width: 800px;
+  float:left;
+  margin-right: 100px;
+  background-color: #1F2231;
+}
+
+#column2 {
+  width: 800px;
+  overflow: hidden;
+  background-color: #1F2231;
+  height:26cm;
+}
+
+
+h1{
+  text-align: center;
 }
